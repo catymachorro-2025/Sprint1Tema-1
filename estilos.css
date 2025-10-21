@@ -89,11 +89,45 @@
     align-items: center;
    
   }
-   @media all and (max-width: 800px){
+   @media all and (max-width: 1024px){
     .section{
         flex-direction: column;
     }
     .menu{
         flex-direction: column;
+        display: block;
+        flex-grow: 1;
+        height: auto;
+    }
+    .aside{
+        display: flex;
+        justify-content: center;
     }
   }
+  @media all and (max-width:768px){
+   .menu{
+    flex-direction: column;
+    display: block;
+    flex-grow: 1;
+   }
+
+    .articulos{
+        flex-direction: column;
+        
+    }
+    .publicidad{
+        flex-direction: column;
+    }
+    .aside{
+        flex-direction: column;
+    }
+  }
+   @media all and(max-widht:400px){ 
+    .aside{
+         flex-direction: column;
+    }
+    .publicidad{
+        flex-direction: column;
+    }
+  }
+  

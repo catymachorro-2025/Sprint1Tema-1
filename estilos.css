@@ -89,3 +89,11 @@
     align-items: center;
    
   }
+   @media all and (max-width: 800px){
+    .section{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+    }
+  }

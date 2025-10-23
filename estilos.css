@@ -76,6 +76,8 @@
      }
        .publicidad{
         background: #8D5F8C;
+        flex-direction: column;
+        flex: 1 1 100%;
              
         
        }
@@ -101,10 +103,19 @@
         flex-grow: 1;
         height: auto;
     }
+    /*cambie el aside por column, estaba centrado*/
     .aside{
-        display: flex;
-        justify-content: center;
+    flex-direction: column;
     }
+     .publicidad{
+        flex-direction: column;
+         display: block;
+        flex-grow: 1;
+        height: auto;
+        width: auto; 
+    }  
+    
+
   }
   @media all and (max-width:768px){
    .menu{
@@ -117,9 +128,13 @@
         flex-direction: column;
         
     }
-    .publicidad{
+     .publicidad{
         flex-direction: column;
-    }
+         display: block;
+        flex-grow: 1;
+        height: auto;
+        width: auto; 
+    }  
     .aside{
         flex-direction: column;
     }
@@ -127,8 +142,13 @@
    @media all and(max-widht:400px){ 
     .aside{
          flex-direction: column;
+        
     }
     .publicidad{
         flex-direction: column;
+         height: auto;
+        width: auto;
+        
+
     }
   }
